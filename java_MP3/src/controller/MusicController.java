@@ -1,5 +1,5 @@
 package controller;
-
+//buat CRUD playlist
 import java.util.List;
 import DAOmusic.DAOMusic;
 import DAOimplement.MusicImplement;
@@ -21,19 +21,12 @@ public class MusicController {
     private boolean deleteError = false;
 
     private boolean isFormValid() {
-//        return !frame.getJTJudul().getText().isEmpty()
-//            && !frame.getJTNama().getText().isEmpty()
-//            && !frame.getJTArtis().getText().isEmpty()
-//            && !frame.getJTLink().getText().isEmpty();
-        return true;
+        return !frame.getjTextFieldJudul().getText().isEmpty()
+            && !frame.getjTextFieldNama().getText().isEmpty()
+            && !frame.getjTextFieldArtis().getText().isEmpty()
+            && !frame.getjTextFieldLink().getText().isEmpty();
    
     }
-
-//    public MusicController (Playlist frame){
-//    this.frame = frame; 
-//    implMusic = new DAOMusic();
-//    dm = implMusic.getAll();
-//    }
     
     public MusicController (PlaylistEdit frame){
     this.frame = frame; 
@@ -47,31 +40,8 @@ public class MusicController {
         frame.getjTablePlaylistupdate().setModel(mt);
         frame.getjTablePlaylistupdate().getColumnModel().getColumn(0).setMaxWidth(30);
     }
-    public void insert() {
-////        System.out.println("songpath"+ songPaths);
-//        if (isFormValid()) {
-//            try {
-//                String listName = frame.getjTextFieldListname().getText(); // Mendapatkan nama playlist dari JTextField
-//        
-//        for (String songPath : songPaths) {
-//            DataMusic music = new DataMusic();
-//            music.setNama(listName); // Mengatur nama playlist
-//            music.setLink(songPath); // Mengatur jalur lagu
-//            
-//            implMusic.insert(music); // Memasukkan lagu ke dalam playlist
-//        }
-//                insertError = false;
-//            } catch (NumberFormatException ex) {
-//                // Tampilkan pesan bahwa ada input kosong
-//                JOptionPane.showMessageDialog(null, "Invalid input!", "Warning", JOptionPane.WARNING_MESSAGE);
-//                ex.printStackTrace();
-//                insertError = true;
-//            }
-//        } else {
-//            // Tampilkan pesan peringatan bahwa data belum diisi
-//            JOptionPane.showMessageDialog(null, "Please fill the form!", "Warning", JOptionPane.WARNING_MESSAGE);
-//            insertError = true;
-//        }
+    public void insert() 
+    { 
     }
     
      public void update() {

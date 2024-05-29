@@ -1,5 +1,5 @@
 package controller;
-
+//buat 
 import DAOimplement.MusicImplement;
 import DAOmusic.DAOMusic;
 import java.io.File;
@@ -13,7 +13,7 @@ import model.DataMusic;
 import model.songData;
 import view.Playlist;
 
-public class playlistController extends JDialog {
+public class playlistController extends JDialog {//array songpath bakal bisa ditampilin di jendela terminal
     private MPcontroller mpcontroller;
     ArrayList<String> songPaths;
     private Playlist frame;

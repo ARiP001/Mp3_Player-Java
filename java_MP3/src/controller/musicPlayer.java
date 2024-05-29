@@ -1,5 +1,5 @@
 package controller;
-
+//buat play lagu
 import javazoom.jl.player.advanced.AdvancedPlayer;
 import javazoom.jl.player.advanced.PlaybackEvent;
 import javazoom.jl.player.advanced.PlaybackListener;
@@ -7,7 +7,7 @@ import javazoom.jl.player.advanced.PlaybackListener;
 import java.io.*;
 import model.songData;
 
-public class musicPlayer extends PlaybackListener {
+public class musicPlayer extends PlaybackListener {//playback == jlayer
     private MPcontroller MPcon;
     private boolean isPaused;
     private boolean songFinished;

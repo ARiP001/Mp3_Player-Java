@@ -260,6 +260,7 @@ public class PlaylistEdit extends javax.swing.JFrame {
 
     private void jButtonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClearActionPerformed
         jTextFieldId.setText("");
+        jTextFieldJudul.setText("");
         jTextFieldNama.setText("");
         jTextFieldArtis.setText("");
         jTextFieldLink.setText("");
