@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2024 at 07:24 PM
+-- Generation Time: May 29, 2024 at 11:09 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -24,27 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `music`
---
-
-CREATE TABLE `music` (
-  `id` int(11) NOT NULL,
-  `judul` varchar(25) NOT NULL,
-  `genre` varchar(25) NOT NULL,
-  `artis` varchar(25) NOT NULL,
-  `link` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `music`
---
-
-INSERT INTO `music` (`id`, `judul`, `genre`, `artis`, `link`) VALUES
-(1, 'letsgo', 'anisong', 'abraar', 'https');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `playlist`
 --
 
@@ -61,23 +40,18 @@ CREATE TABLE `playlist` (
 --
 
 INSERT INTO `playlist` (`id`, `nama`, `judul`, `artis`, `link`) VALUES
-(3, 'arif', '', '', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Tropic Fuse - French Fuse.mp3'),
-(4, 'arif', '', '', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Wind Riders - Asher Fulero.mp3'),
-(5, 'coba', '', '', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Wind Riders - Asher Fulero.mp3'),
-(6, 'coba', '', '', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Wind Riders - Asher Fulero.mp3'),
-(7, 'coba', '', '', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Tropic Fuse - French Fuse.mp3'),
-(8, 'arif', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Tropic Fuse - French Fuse.mp3', 'Tropic Fuse', 'French Fuse'),
-(9, 'arif', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Wind Riders - Asher Fulero.mp3', 'Wind Riders', 'Asher Fulero');
+(12, 'arif', 'Wind Riders', 'Asher Fulero', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Wind Riders - Asher Fulero.mp3'),
+(13, 'arif', 'Tropic Fuse', 'French Fuse', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Tropic Fuse - French Fuse.mp3'),
+(14, 'test', 'Epilogue', 'YOASOBI', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\YOASOBI - THE BOOK MP3\\01  Epilogue.mp3'),
+(16, 'playlist_baru', 'Encore', 'YOASOBI', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Encore.mp3'),
+(17, 'playlist_baru', 'Halzion', 'YOASOBI', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Halzion.mp3'),
+(18, 'coba _fix', 'Encore', 'YOASOBI', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Encore.mp3'),
+(19, 'coba _fix', 'Halzion', 'YOASOBI', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Halzion.mp3'),
+(20, 'coba _fix', 'Tabun', 'YOASOBI', 'C:\\Users\\LWNOVO\\Documents\\NetBeansProjects\\java_MP3\\src\\assets\\Tabun.mp3');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `music`
---
-ALTER TABLE `music`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `playlist`
@@ -90,16 +64,10 @@ ALTER TABLE `playlist`
 --
 
 --
--- AUTO_INCREMENT for table `music`
---
-ALTER TABLE `music`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT for table `playlist`
 --
 ALTER TABLE `playlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
